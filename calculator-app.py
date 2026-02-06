@@ -39,7 +39,6 @@ with col2:
   st.markdown("<h3 style='text-align: justify;'>Enter your age:</h3>", unsafe_allow_html=True)
     
   DOB = st.date_input('', min_value=datetime.date(1947, 8, 15),max_value=today)
-  
-age = (today-DOB).days//365
-st.markdown(f"Your current age is: {age}", unsafe_allow_html=True, text_alignment="center")
+  age = (today-DOB).days//365
+  st.markdown(f"<h5> Your current age is: {age}", unsafe_allow_html=True, text_alignment="center")
 
